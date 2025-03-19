@@ -6,7 +6,7 @@ I'm a dynamic professional with a strong foundation in digital solutions and a p
 
 **Explore my comprehensive resume and portfolio:**
 
-➡️ [sameerwalke.github.io](https://sameerwalke.github.io) 💼
+➡️ [sameerwalke.github.io](https://sameerwalke.github.io/sameerwalke) 💼
 
 ### 💡 Key Skills
 
