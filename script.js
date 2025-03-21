@@ -9,19 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Smooth scrolling for "Let's Collaborate" button
-    const contactButton = document.querySelector('.cta-button');
-    if (contactButton) {
-        contactButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            smoothScrollTo('#contact');
-        });
-    }
-
-    // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('.main-nav a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+    // Smooth scrolling for "Let's Collaborate" button and navigation links
+    const clickableElements = document.querySelectorAll('.cta-button, .main-nav a');
+    clickableElements.forEach(element => {
+        element.addEventListener('click', function(e) {
             e.preventDefault();
             smoothScrollTo(this.getAttribute('href'));
         });
@@ -50,28 +41,26 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleNav(); // Initial check
 
 
-    // Tagline Animation
+    // Tagline Animation (Improved with CSS transition)
     const roles = ['Digital Strategist', 'SEO Expert', 'Web Developer', 'Content Creator'];
     const tagline = document.querySelector('.tagline');
     let taglineIndex = 0;
 
     function updateTagline() {
-        tagline.style.opacity = 0;
+        tagline.classList.add('fade-out');
         setTimeout(() => {
             tagline.textContent = roles[taglineIndex];
-            tagline.style.opacity = 1;
+            tagline.classList.remove('fade-out');
             taglineIndex = (taglineIndex + 1) % roles.length;
         }, 500);
     }
 
-    if (tagline) {
-        setInterval(updateTagline, 3000);
-        updateTagline();
-    }
+    setInterval(updateTagline, 3000);
+    updateTagline();
 
 
-    // Highlight Active Section in Nav (Optimized)
-    const sections = document.querySelectorAll('section');
+    // Highlight Active Section in Nav (Improved)
+    const sections = document.querySelectorAll('section:not(#highlights)'); // Exclude #highlights
     const navItems = document.querySelectorAll('.main-nav ul li a');
     let lastActiveNavItem = null;
 
