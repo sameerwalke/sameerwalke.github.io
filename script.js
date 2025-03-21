@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // Tagline Animation (Improved with CSS transition)
-    const roles = ['Digital Strategist', 'SEO Expert', 'Web Developer', 'Content Creator'];
+    const roles = ['Digital Marketing', 'SEO Expert', 'Web Developer', 'Social Media Marketing'];
     const tagline = document.querySelector('.tagline');
     let taglineIndex = 0;
 
