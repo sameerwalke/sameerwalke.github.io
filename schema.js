@@ -25,12 +25,13 @@ function addSchemaMarkup() {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Sameer Walke",
-            "image": "/sameer-walke.jpg",
-            "jobTitle": ["Digital Strategist", "SEO Expert", "Web Developer", "Content Creator"],
+            "image": "sameer-walke.jpg",
+            "jobTitle": ["Digital Strategist", "SEO Expert", "Web Developer", "Marketing Expert"],
             "telephone": "+919421723220",
-            "url": "https://sameerwalke.github.io",
+            "url": "https://sameerwalke.github.io/sameerwalke",
             "sameAs": [
                 "https://www.linkedin.com/in/sameerwalke",
+                "https://github.com/sameerwalke19",
                 "https://www.upwork.com/freelancers/~01dfc96c7556675ead?mp_source=share",
                 "https://wa.me/917499422093"
             ],
@@ -42,7 +43,7 @@ function addSchemaMarkup() {
             "alumniOf": [
                 {
                     "@type": "EducationalOrganization",
-                    "name": "KIIT Film and Media Science",
+                    "name": "KIIT School of Film and Media Science",
                     "description": "Graduated in 2015"
                 },
                 {
