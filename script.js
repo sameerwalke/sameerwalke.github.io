@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('.main-nav');
     function toggleNav() {
         if (window.scrollY > 100) {
-            nav.classList.add('visible');
+            nav.classList.remove('hidden'); // Remove hidden class
         } else {
-            nav.classList.remove('visible');
+            nav.classList.add('hidden'); // Add hidden class
         }
     }
     const debouncedToggleNav = debounce(toggleNav, 100); // Debounce for performance
