@@ -6,7 +6,7 @@ I'm a dynamic professional with a strong foundation in digital solutions and a p
 
 **Explore my comprehensive resume and portfolio:**
 
-➡️ [sameerwalke.github.io](https://sameerwalke.github.io/sameerwalke) 💼
+➡️ [Let's Collaborate!](https://tr.ee/hqN4DD) 🤝
 
 ### 💡 Key Skills
 
@@ -36,8 +36,11 @@ For a complete list of 60+ licenses & certifications, please visit my [LinkedIn 
 
 ### 📫 Let's Connect!
 
--   📧 Email: [talktowalke@gmail.com](mailto:talktowalke@gmail.com) 💌
--   🔗 LinkedIn: [Sameer Walke](https://www.linkedin.com/in/sameerwalke) 🤝
--   💼 Upwork: [Sameer Walke on Upwork](https://www.upwork.com/freelancers/~01dfc96c7556675ead?mp_source=share) 💼
+-   🔍 Google: [My Google Profile](https://g.co/kgs/vXoouGM)
+-   🤝 LinkedIn: [Sameer Walke](https://www.linkedin.com/in/sameerwalke)
+-   📱 WhatsApp: [Chat with me](https://wa.me/917499422093)
+-   ✍️ Medium: [sameerwalke.medium.com](https://sameerwalke.medium.com)
+-   💼 Upwork: [Sameer Walke on Upwork](https://www.upwork.com/freelancers/~01dfc96c7556675ead?mp_source=share)
+-   📧 Email: [talktowalke@gmail.com](mailto:talktowalke@gmail.com)
 
 Thank you for visiting! 😊
