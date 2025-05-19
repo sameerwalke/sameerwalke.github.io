@@ -21,14 +21,19 @@ const credentials = [
 
 function addSchemaMarkup() {
     try {
+        const siteUrl = "https://sameerwalke.github.io/";
+        const personId = `${siteUrl}#sameerwalke`;
+
         const personSchema = {
             "@context": "https://schema.org",
             "@type": "Person",
+            "@id": personId,
             "name": "Sameer Walke",
-            "image": "sameer-walke.jpg",
-            "jobTitle": ["Digital Strategist", "SEO Expert", "Web Developer", "Marketing Expert"],
-            "telephone": "+919421723220",
-            "url": "https://sameerwalke.github.io/sameerwalke",
+            "image": `${siteUrl}sameer-walke.jpg`, // Absolute URL
+            "jobTitle": ["Digital Strategist", "SEO Expert", "Web Developer", "Digital Marketing Consultant", "Social Media Strategist", "AI Specialist"],
+            "description": "I'm a marketing professional passionate about data-driven strategies and building strong brands. I craft compelling marketing campaigns and leverage data analytics for maximum ROI. I'm also a skilled web developer, creating seamless user experiences.",
+            "telephone": "+919421723220", // Ensure this is a publicly intended contact number
+            "url": siteUrl,
             "sameAs": [
                 "https://www.linkedin.com/in/sameerwalke",
                 "https://github.com/sameerwalke19",
@@ -43,16 +48,28 @@ function addSchemaMarkup() {
             "alumniOf": [
                 {
                     "@type": "EducationalOrganization",
-                    "name": "KIIT School of Film and Media Science",
-                    "description": "Graduated in 2015"
+                    "name": "KIIT School of Film and Media Science"
                 },
                 {
                     "@type": "EducationalOrganization",
-                    "name": "YCM Open University",
-                    "description": "Bachelor of Arts, 2017"
+                    "name": "YCM Open University"
                 }
             ],
             "hasCredential": credentials, // Use the credentials array
+            "hasOccupation": {
+              "@type": "Occupation",
+              "name": "Freelance WordPress Developer",
+              "startDate": "2018",
+              "description": "Worked on over 500+ websites as a WordPress Developer."
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "email": "talktowalke@gmail.com",
+                "contactType": "Sales and General Inquiries",
+                "availableLanguage": ["en", "mr"]
+              }
+            ],
             "knowsAbout": [
                 {
                     "@type": "Book",
@@ -61,6 +78,11 @@ function addSchemaMarkup() {
                     "datePublished": "2024",
                     "inLanguage": "en",
                     "description": "A comprehensive guide to building WordPress websites without coding.",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Sameer Walke",
+                        "url": siteUrl
+                    },
                     "publisher": {
                         "@type": "Organization",
                         "name": "SS Marketing Hub"
@@ -74,6 +96,11 @@ function addSchemaMarkup() {
                     "datePublished": "2024",
                     "inLanguage": "mr",
                     "description": "कोडींगशिवाय वर्डप्रेस वेबसाईट तयार करण्यासाठी एक सर्वसमावेशक मार्गदर्शक.",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Sameer Walke",
+                        "url": siteUrl
+                    },
                     "publisher": {
                         "@type": "Organization",
                         "name": "SS Marketing Hub"
@@ -86,6 +113,11 @@ function addSchemaMarkup() {
                     "datePublished": "2025",
                     "inLanguage": "en",
                     "description": "Exploration of how AI can be integrated into everyday tasks.",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Sameer Walke",
+                        "url": siteUrl
+                    },
                     "publisher": {
                         "@type": "Organization",
                         "name": "SS Marketing Hub"
@@ -101,10 +133,36 @@ function addSchemaMarkup() {
             "name": "Digital Marketing, SEO, Web Development",
             "description": "Expert digital marketing, SEO, and web development services to boost your online presence and drive business growth.",
             "provider": {
-                "@type": "Person",
-                "name": "Sameer Walke"
+                "@id": personId // Link to the Person schema
             },
             "serviceType": ["Digital Marketing", "SEO", "Web Development", "Social Media Marketing"]
+        };
+
+        const websiteSchema = {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Sameer Walke - Digital Portfolio",
+            "url": siteUrl,
+            "publisher": {
+                "@id": personId // You are the publisher of your personal site
+            },
+            "description": "Official website and portfolio of Sameer Walke, a digital strategist offering digital marketing, SEO, and web development services."
+        };
+
+        const profilePageSchema = {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "name": "Sameer Walke - Digital Marketing, SEO, Web Development Services", // From <title>
+            "url": siteUrl, // URL of this specific page (index.html)
+            "mainEntity": {
+                "@id": personId // The main entity of this profile page is you
+            },
+            "isPartOf": {
+                "@type": "WebSite",
+                "url": siteUrl
+            },
+            "description": "Sameer Walke is a digital strategist offering digital marketing, SEO, web development, and social media marketing services.", // From meta description
+            "publisher": { "@id": personId }
         };
 
         // Add Person Schema
@@ -118,6 +176,18 @@ function addSchemaMarkup() {
         serviceScript.type = 'application/ld+json';
         serviceScript.textContent = JSON.stringify(serviceSchema);
         document.head.appendChild(serviceScript);
+
+        // Add WebSite Schema
+        const websiteScript = document.createElement('script');
+        websiteScript.type = 'application/ld+json';
+        websiteScript.textContent = JSON.stringify(websiteSchema);
+        document.head.appendChild(websiteScript);
+
+        // Add ProfilePage Schema
+        const profilePageScript = document.createElement('script');
+        profilePageScript.type = 'application/ld+json';
+        profilePageScript.textContent = JSON.stringify(profilePageSchema);
+        document.head.appendChild(profilePageScript);
     } catch (error) {
         console.error("Error adding schema markup:", error);
     }
