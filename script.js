@@ -113,4 +113,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
+
+    // Set current year for career highlight
+    const careerYearSpan = document.getElementById('career-current-year');
+    if (careerYearSpan) {
+        careerYearSpan.textContent = new Date().getFullYear();
+    }
 });

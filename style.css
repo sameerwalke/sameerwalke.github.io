@@ -291,10 +291,16 @@ a:not(.social-btn):not(.cta-button) { /* Apply transition to general links */
 /* Footer Styles */
 footer {
     padding: 40px 20px;
-    background-color: var(--card-bg-color);
+    background-color: var(--card-bg-color); /* Revert to card background color */
+    color: var(--text-color-default); /* Revert to default text color */
     border-radius: 12px;
     box-shadow: var(--shadow-md); /* Use standard shadow */
     text-align: center;
+}
+
+footer h2 {
+    color: var(--section-heading-color); /* Revert to standard section heading color */
+    margin-bottom: 25px; /* Add some space below heading */
 }
 
 .contact-links {
@@ -317,7 +323,7 @@ footer {
 .copyright-text {
     margin-top: 30px;
     font-size: 0.9em;
-    color: var(--color-text-secondary);
+    color: var(--color-text-secondary); /* Revert to secondary text color for light background */
 }
 
 .social-btn:hover {

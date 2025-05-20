@@ -37,8 +37,10 @@ function addSchemaMarkup() {
             "sameAs": [
                 "https://www.linkedin.com/in/sameerwalke",
                 "https://github.com/sameerwalke19",
+                "https://sameerwalke.medium.com",
                 "https://www.upwork.com/freelancers/~01dfc96c7556675ead?mp_source=share",
-                "https://wa.me/917499422093"
+                "https://wa.me/917499422093",
+                "https://amazon.com/author/sameerwalke"
             ],
             "worksFor": {
                 "@type": "Organization",

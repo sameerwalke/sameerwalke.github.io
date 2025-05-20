@@ -2,7 +2,7 @@
 
 Welcome to my GitHub profile!
 
-I'm a dynamic professional with a strong foundation in digital solutions and a passion for driving smart digital strategies. My expertise encompasses web development, data analysis, and digital marketing. 📈
+I'm a dynamic professional with a strong foundation in digital solutions and a passion for driving smart digital strategies. My expertise encompasses web development, data analysis, digital marketing, and leveraging AI for innovative solutions. 📈
 
 **Explore my comprehensive resume and portfolio:**
 
@@ -40,6 +40,7 @@ For a complete list of 60+ licenses & certifications, please visit my [LinkedIn 
 -   🤝 LinkedIn: [Sameer Walke](https://www.linkedin.com/in/sameerwalke)
 -   📱 WhatsApp: [Chat with me](https://wa.me/917499422093)
 -   ✍️ Medium: [sameerwalke.medium.com](https://sameerwalke.medium.com)
+-   📚 Amazon Author Page: [amazon.com/author/sameerwalke](https://amazon.com/author/sameerwalke)
 -   💼 Upwork: [Sameer Walke on Upwork](https://www.upwork.com/freelancers/~01dfc96c7556675ead?mp_source=share)
 -   📧 Email: [talktowalke@gmail.com](mailto:talktowalke@gmail.com)
 
